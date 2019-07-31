@@ -1,216 +1,469 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>スタンダードレイアウト</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="header">
-    <h1 class="logo">
-      <a href="/">SAMPLE SITE</a>
-    </h1>
-    <nav class="global-nav">
-      <ul>
-        <li class="nav-item active"><a href="#">HOME</a></li>
-        <li class="nav-item"><a href="#">ABOUT</a></li>
-        <li class="nav-item"><a href="#">NEWS</a></li>
-        <li class="nav-item"><a href="#">TOPICS</a></li>
-        <li class="nav-item"><a href="#">DOCS</a></li>
-        <li class="nav-item"><a href="#">BLOG</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="wrapper clearfix">
-    <main class="main">
-      <h2 class="hidden">HOT TOPIC</h2>
-      <a href="#" class="hot-topic clearfix">
-        <img class="image" src="./images/hot-topic.jpg" alt="コーディング画面">
-        <div class="content">
-          <h3 class="title">実務で使えるHTML/CSS<br>モダンコーディングTIPS</h3>
-          <p class="desc">Webフロントエンドの進化の勢いはとどまるところを知りません。新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用して...</p>
-          <time class="date" datetime="2015-09-01">2015.09.01 TUE</time>
-        </div>
-      </a>
-      <h2 class="heading">NEWS</h2>
-      <ul class="scroll-list">
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-08-23">2015.08.23 SUN</time>
-            <span class="category news">NEWS</span>
-            <span class="title">WORKSを更新しました。</span>
-          </a>
-        </li>
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-08-12">2015.08.12 WED</time>
-            <span class="category">TOPIC</span>
-            <span class="title">CSSでここまでできる！？ホントに使えるCSSセレクタ10選！</span>
-          </a>
-        </li>
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-08-04">2015.08.04 TUE</time>
-            <span class="category news">NEWS</span>
-            <span class="title">TOPICSを更新しました。</span>
-          </a>
-        </li>
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-07-25">2015.07.25 SAT</time>
-            <span class="category">TOPIC</span>
-            <span class="title">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</span>
-          </a>
-        </li>
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-07-09">2015.07.09 THU</time>
-            <span class="category">TOPIC</span>
-            <span class="title">HTML5の新しい属性で手軽にフォームバリデーション</span>
-          </a>
-        </li>
-        <li class="scroll-item">
-          <a href="#">
-            <time class="date" datetime="2015-06-30">2015.06.30 TUE</time>
-            <span class="category news">NEWS</span>
-            <span class="title">WORKSを更新しました。</span>
-          </a>
-        </li>
-      </ul>
-      <h2 class="hidden">ARTICLES</h2>
-      <div class="clearfix">
-        <a href="#" class="article-box">
-          <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-          <p class="desc">新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-          <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
-          <img class="image" src="./images/article.jpg" alt="コーディング画面">
-        </a>
-        <a href="#" class="article-box">
-          <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-          <p class="desc">新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-          <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
-          <img class="image" src="./images/article.jpg" alt="コーディング画面">
-        </a>
-        <a href="#" class="article-box">
-          <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-          <p class="desc">新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-          <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
-          <img class="image" src="./images/article.jpg" alt="コーディング画面">
-        </a>
-        <a href="#" class="article-box">
-          <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-          <p class="desc">新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-          <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
-          <img class="image" src="./images/article.jpg" alt="コーディング画面">
-        </a>
-      </div>
-    </main>
-    <div class="sidemenu">
-      <h2 class="heading">RANKING</h2>
-      <ol class="ranking">
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-        <li class="ranking-item">
-          <a href="#">
-            <img class="image" src="./images/ranking.jpg" alt="グラフの画像">
-            <span class="order"></span>
-            <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
-          </a>
-        </li>
-      </ol>
-      <h2 class="heading">DOCUMENTS</h2>
-      <ul class="documents">
-        <li>
-          <h3 class="title">HTML5</h3>
-          <ul>
-            <li><a href="#">追加された要素</a></li>
-            <li><a href="#">削除された要素</a></li>
-            <li><a href="#">意味が変わった要素</a></li>
-            <li><a href="#">HTML5のコンテンツモデル</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="title">CSS3</h3>
-          <ul>
-            <li><a href="#">追加されたプロパティ</a></li>
-            <li><a href="#">追加されたセレクタ</a></li>
-            <li><a href="#">追加された単位</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="title">JavaScript</h3>
-          <ul>
-            <li><a href="#">JavaScriptの言語仕様</a></li>
-            <li><a href="#">ECMAScriptとは？</a></li>
-            <li><a href="#">jQueryとは？</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="title">Sass, Less, Stylus</h3>
-          <p>準備中</p>
-        </li>
-        <li>
-          <h3 class="title">TypeScript</h3>
-          <p>準備中</p>
-        </li>
-      </ul>
-      <h2 class="hidden">SEARCH</h2>
-      <form class="search-box">
-        <input class="search-input" type="text" name="search" placeholder="SEARCH">
-        <input class="search-button" type="submit" value="検索">
-        <p class="text">サイト内の文章を検索できます。</p>
-      </form>
-    </div>
-  </div>
-  <footer class="footer">
-    <ul class="horizontal-list">
-      <li class="horizontal-item"><a href="#">ABOUT ME</a></li>
-      <li class="horizontal-item"><a href="#">SITE MAP</a></li>
-      <li class="horizontal-item"><a href="#">SNS</a></li>
-      <li class="horizontal-item"><a href="#">CONTACT</a></li>
-    </ul>
-    <p class="copyright">Copyright © 2015 SAMPLE SITE</p>
-  </footer>
-</body>
-</html>
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.heading {
+  padding: 10px 12px;
+  background: url('bg-slash.gif');
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+.hidden {
+  display: none;
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  width: 100%;
+  padding: 28px 0 10px;
+  background: url('bg-header.gif') repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
+}
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url('logo.png') no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.global-nav {
+  margin-top: 15px;
+  text-align: center;
+}
+.global-nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+.global-nav .nav-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.15s;
+}
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover {
+  background-color: #d03c56;
+  color: #fff;
+}
+
+
+/* --------------------------------
+ * wrapper
+ * -------------------------------- */
+.wrapper {
+  width: 970px;
+  margin: 30px auto 40px;
+}
+
+
+/* --------------------------------
+ * main
+ * -------------------------------- */
+.main {
+  display: block;
+  float: left;
+  width: 660px;
+}
+.hot-topic {
+  display: block;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+}
+.hot-topic:hover {
+  opacity: 0.85;
+}
+.hot-topic .image {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.hot-topic .content {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 105px 25px 0;
+  background-color: #2d3d54;
+  line-height: 1.6;
+}
+.hot-topic .title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.0rem;
+}
+.hot-topic .desc {
+  color: #ddc;
+}
+.hot-topic .date {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 140px;
+  padding: 4px;
+  background-color: #fff;
+  color: #2d3d54;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.scroll-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+.scroll-list .scroll-item a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-size: 0;
+  transition: background-color 0.1s;
+}
+.scroll-list .scroll-item:nth-of-type(even) a {
+  background: url('bg-slash.gif');
+}
+.scroll-list .scroll-item a:hover {
+  background-color: #fafaf8;
+}
+.scroll-list .date {
+  display: inline-block;
+  width: 19%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+.scroll-list .category {
+  display: inline-block;
+  width: 8%;
+  border-radius: 5px;
+  background-color: #d03c56;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+  line-height: 16px;
+}
+.scroll-list .category.news {
+  background-color: #2c3c53;
+}
+.scroll-list .title {
+  display: inline-block;
+  width: 73%;
+  padding-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+.article-box {
+  position: relative;
+  display: block;
+  width: 315px;
+  height: 360px;
+  margin-bottom: 30px;
+  padding: 210px 15px 0;
+  box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+}
+.article-box:hover {
+  opacity: 0.8;
+}
+.article-box:nth-of-type(odd) {
+  float: left;
+}
+.article-box:nth-of-type(even) {
+  float: right;
+}
+.article-box .title {
+  margin-top: 30px;
+  color: #555;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.article-box .desc {
+  margin-top: 5px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article-box .date {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  display: block;
+  width: 160px;
+  padding: 4px;
+  background-color: #b5d264;
+  color: #2d3d54;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.article-box .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/* --------------------------------
+ * sidemenu
+ * -------------------------------- */
+.sidemenu {
+  float: right;
+  width: 275px;
+}
+.ranking {
+  margin-bottom: 30px;
+  list-style-type: none;
+  counter-reset: ranking;
+}
+.ranking .ranking-item {
+  margin-top: 15px;
+}
+.ranking .ranking-item a {
+  display: block;
+  font-size: 0;
+  transition: opacity 0.15s;
+}
+.ranking .ranking-item a:hover {
+  opacity: 0.8;
+}
+.ranking .image {
+  width: 55px;
+  height: 55px;
+}
+.ranking .order {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  color: #aaa;
+  vertical-align: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 16px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ranking .order::before {
+  content: counter(ranking);
+  display: inline-block;
+  counter-increment: ranking;
+  font-size: 1.0rem;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.ranking .ranking-item:nth-of-type(1) .order,
+.ranking .ranking-item:nth-of-type(2) .order,
+.ranking .ranking-item:nth-of-type(3) .order {
+  border: none;
+  color: #fff;
+  font-weight: normal;
+  line-height: 18px;
+}
+.ranking .ranking-item:nth-of-type(1) .order {
+  background-color: #dab413;
+}
+.ranking .ranking-item:nth-of-type(2) .order {
+  background-color: #6e7b84;
+}
+.ranking .ranking-item:nth-of-type(3) .order {
+  background-color: #a0541a;
+}
+.ranking .text {
+  display: inline-block;
+  width: 182px;
+  color: #000;
+  vertical-align: top;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.documents {
+  margin: 10px 10px 30px;
+}
+.documents,
+.documents ul {
+  list-style-type: none;
+}
+.documents > li .title {
+  margin: 15px 0;
+  padding-left: 8px;
+  border-left: 5px solid #d03c56;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+.documents > li + li {
+  margin-top: 25px;
+}
+.documents > li ul {
+  margin: 15px;
+}
+.documents > li ul > li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background: url('arrow.gif') no-repeat left center;
+}
+.documents a:hover {
+  text-decoration: underline;
+}
+.search-box {
+  padding: 15px;
+  background-color: #ccc;
+  font-size: 0;
+}
+.search-box > * {
+  font-size: 1.2rem;
+}
+.search-box .search-input {
+  width: 205px;
+  height: 26px;
+  padding: 0 10px;
+  border: none;
+}
+.search-box .search-button {
+  width: 40px;
+  height: 26px;
+  border: none;
+  background-color: #d03c56;
+  color: #fff;
+  cursor: pointer;
+}
+.search-box .text {
+  margin-top: 12px;
+}
+
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  width: 100%;
+  padding: 20px 0 30px;
+  background: #2d3d54 url('bg-footer.gif');
+  color: #fff;
+}
+.horizontal-list {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0;
+}
+.horizontal-list .horizontal-item {
+  display: inline-block;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid #bbb;
+}
+.horizontal-list .horizontal-item a {
+  border-bottom: 1px dashed #777;
+  color: #bbb;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+.horizontal-list .horizontal-item a:hover {
+  color: #ddd;
+}
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+/* --------------------------------
+ * challenge
+ *
+ * 288行目からの.ranking .order, .ranking .order::beforeの
+ * スタイルをコメントアウトしてから適用してください。
+ * -------------------------------- */
+/*
+.ranking .ranking-item {
+  position: relative;
+}
+.ranking .image {
+  margin-right: 20px;
+}
+.ranking .order {
+  position: absolute;
+  top: -9px;
+  left: 44px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #aaa;
+  text-align: center;
+  font-weight: bold;
+  line-height: 18px;
+}
+.ranking .order::before {
+  content: counter(ranking);
+  counter-increment: ranking;
+  font-size: 1.0rem;
+}
+.ranking .ranking-item:nth-of-type(1) .order,
+.ranking .ranking-item:nth-of-type(2) .order,
+.ranking .ranking-item:nth-of-type(3) .order {
+  line-height: 20px;
+}
+.ranking .text {
+  width: 200px;
+}
+*/
